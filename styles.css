@@ -1,0 +1,47 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* navbar styling */
+
+.logo img {
+	width: 50px;
+    height: 50px;
+}
+
+.navBar {
+  position: fixed;
+  height: 80px;
+  width: 100%;
+  top: 0;
+  padding: 0;
+  background-color: red ;
+  text-align: left;
+}
+
+.navBar li {
+  display: inline-block;
+  list-style: none;
+  
+}
+
+.navBar a {
+  text-decoration: none;
+}
+.navBar a:hover {
+	cursor: pointer;
+    text-decoration: underline;
+}
+
+.navBarFlexbox{
+	display: flex;
+    flex-direction: row;
+}
+
+.navBarFlexbox2{
+	display: flex;
+    flex-direction: column;
+}
+
+/* home page styling */
