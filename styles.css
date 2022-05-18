@@ -1,55 +1,61 @@
-html, body {
-    margin: 0;
-    padding: 0;
+html,
+body {
+  margin: 0;
+  padding: 0;
 }
 
 /* navbar styling */
 
-.logo img { /* sizes logo correctly to fit tool bar */
-	width: 50px;
+.logo img {
+  /* sizes logo correctly to fit tool bar */
+  width: 50px;
   height: 50px;
   margin: 15px 25px;
 }
 
-.navBar { /* styling for nav bar */
+.navBar {
+  /* styling for nav bar */
   position: fixed;
   height: 80px;
   width: 100%;
   top: 0;
   padding: 0;
-  background-color: red ;
+  background-color: red; /* DESIGNER CHANGE*/
   text-align: left;
 }
 
-.navBar ul, li {
+.navBar ul,
+li {
   display: inline-block;
 }
-.navBar li { 
+
+.navBar li {
   display: inline-block;
   list-style: none;
   padding: 5px 10px;
-  justify-content: center;;
+  justify-content: center;
 
-  /* rounded button */
-  border: 5px solid black;
-  border-radius: 25px;
-  background: green;
 }
 
-.navBar li:hover {
+.navBar button {
+  /* rounded button */
+  border: 5px solid black; /* DESIGNER CHANGE*/
+  border-radius: 25px; /* DESIGNER CHANGE*/
+  background: green; /* DESIGNER CHANGE*/
+}
+.navBar button:hover {
   cursor: pointer;
+  text-decoration: underline;
+  border: 5px solid white; /* DESIGNER CHANGE */
+  background-color: yellow; /* DESIGNER CHANGE */
 }
 
 .navBar a {
   text-decoration: none;
 }
-.navBar a:hover {
-	cursor: pointer;
-    text-decoration: underline;
-}
 
-.navBarFlexbox{ 
-	display: flex;
+.navBarFlexbox {
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 0 25px 0 0;
@@ -59,28 +65,31 @@ html, body {
   font-weight: bold;
   font-size: 25px;
 }
+
 /* home page styling */
 
 #Home {
-  margin-top: 80px; /* accounts for tool bar height */
-  
+  margin-top: 80px;
+  /* accounts for tool bar height */
 }
 
-.homePageFlexBox { /* flexbox styling for articles */ 
+.homePageFlexBox {
+  /* flexbox styling for articles */
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  height: 100vh;
+  padding: 15px 0;
+
 }
 
 .firstColumn {
   /* border: 10px solid black; */
   padding: 10px 25px;
   margin: 10px;
-  width: 50%;
+  width: 60%;
 }
 
-.firstColumn > img {
+.firstColumn>img {
   width: 100%;
   height: 50%;
 }
@@ -89,31 +98,108 @@ html, body {
   display: flex;
   flex-direction: column;
   /* border: 10px solid black; */
-  padding: 10px 5px;
-  margin: 10px 5px;
-  width: 30%;
+  /* padding: 10px; */
+  margin: 15px 0px;
+  width: 300px;
 }
 
-.secondColumn > div {
+.secondColumn>div {
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   /* border: 4px solid black; */
   height: 30vh;
   /* FONT HERE */
+
 }
 
-.secondColumn > div > img { /*sizes article preview iamges accordingly */
-  max-width: 100vw;
-  height: 80%;
-} 
+.secondColumn>div>img {
+  /*sizes article preview iamges accordingly */
+  
+  
+}
 
-.secondColumn > div > p { /* article title styling */
-  margin-left: 10px;
+.secondColumn>div>p {
+  /* article title styling */
+  font: arial; /* DESIGNER CHANGE*/
   font-weight: bold;
+  margin: 5px;
 }
 
 .articleName {
-  /* FONT HERE */
+  /* FONT HERE DESIGNER CHANGE */
   font-weight: bold;
   font-size: 45px;
 }
+
+/* about and learn more section styling */
+
+.subtitles {
+  font-size: 50px !important;
+  font-weight: bold;
+  margin: 5px;
+}
+
+#About {
+  padding: 50px;
+  background-color: coral; /* DESIGNER CHANGE */
+}
+
+#LearnMore {
+  padding: 50px;
+  background-color: cornflowerblue; /* DESIGNER CHANGE */
+}
+
+
+/* how to help section styling */
+
+#HowToHelp {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+
+  background-color: orange;
+  /* DESIGNER CHANGE*/
+}
+
+#HowToHelp p:first-child {
+  font-size: 25px;
+}
+
+.action1,
+.action2,
+.action3 {
+  background-color: red; /* DESIGNER CHANGE*/
+  padding: 20px;
+  margin: 10px 0;
+}
+
+.generator {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.generator>input,
+button {
+  border: 5px solid white;
+  border-radius: 25px;
+  padding: 10px;
+}
+
+
+
+.generator button:hover {
+  cursor: pointer;
+  color: red; /* DESIGNER CHANGE */
+  background-color: green; /* DESIGNER CHANGE */
+
+}
+
+.template {
+
+  padding: 15px;
+  margin: 15px;
+}
+
