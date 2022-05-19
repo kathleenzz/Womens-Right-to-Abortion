@@ -2,7 +2,8 @@
 <html>
     <head>
         <title>Women's Right to Abortion</title>
-        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&display=swap" rel="stylesheet"> <!--font--> 
+        <link rel="stylesheet" href="styles.css"> <!--css delete in popcode-->
     </head>
     <body>
         <div class="navBar">
@@ -71,29 +72,51 @@
         <div id="HowToHelp">
             <p class="subtitles">TAKE ACTION</p>
             <div class="action1">
-                <p> Write a letter to your representative!</p>
-                <p> Use the generator below to create a template to send to your local and states representatives and show that you care about this movement.</p>
-                
-                <div class="generator">
-                    <input class="inputName" placeholder="Name...">
-                    <br>
-                    <input class="inputDescription" placeholder="I am a student at ICA Cristo Rey in San Francisco.">
-                    <br>
-                    <button id="generate">Generate Template</button>
+                <div class="action1Section">
+                    <p> Write a letter to your representative!</p>
+                    <p> Use the generator below to create a template to send to your local and states representatives and show that you care about this important movement.</p>
                     
-                    <div class="template"></div>
+                    <div class="generator">
+                        <input class="inputName" placeholder="Name...">
+                        <br>
+                        <input class="inputDescription" placeholder="I am a student at ICA Cristo Rey in San Francisco.">
+                        <br>
+                        <button id="generate">Generate Template</button>
+                        
+                        <div class="template"></div>
 
+                    </div>
+                </div>
 
-                    <button><a href="https://findyourrep.legislature.ca.gov/">Find your local California representatives.</a></button> 
-
+                <div class="action1Section">
+                    <p>Next Step: Reach out to your representatives using your generated template. </p>
+                    <a href="https://findyourrep.legislature.ca.gov/">Find your local California representatives.</a>
                 </div>
             </div>
             <div class="action2">
-                <p>Donate using the links below.</p>
+                <p>Support</p>
+                <p>Follow the links below to support organizations fighting for women's reproductive rights, abortion funds, and independent community-based clinics.</p>
+                <p><a href="https://secure3.convio.net/cfrr/site/Donation2?11189.donation=form1&df_id=11189&mfc_pref=T&s_src=21RRFR0421CTA&s_subsrc=datasync&utm_medium=web&utm_source=crr&utm_campaign=21RRFR0421CTA&autologin=true">Center for Reproductive Rights</a></p>
+                <p><a href="https://abortionfunds.org/">National Network of Abortion Funds</a></p>
+                <p><a href="https://keepourclinics.org/">Keep Our Clinics</a></p>
+                <p><a href="https://abortioncarenetwork.org/">Abortion Care Network</a></p>
             
             </div>
             <div class="action3">
-            
+                <p>Share</p>
+                <p>Tweets written by <em>reproductiverights.org</em></p>
+                <div class="tweetSection">
+                    <textarea type="text" value="If #Roe is overturned, *half* of the U.S. states are poised to ban abortion. Take a look at this map by @ReproRights to see what would happen in your state and others: https://bit.ly/3siSILE #AbortionIsEssential #SCOTUS" id="copyTweet" disabled>If #Roe is overturned, *half* of the U.S. states are poised to ban abortion. Take a look at this map by @ReproRights to see what would happen in your state and others: https://bit.ly/3siSILE #AbortionIsEssential #SCOTUS</textarea>
+                    <div onclick="copyPasteTweet1()">Copy Tweet</div>
+
+                    <textarea type="text" value="I’m part of the majority that believes #AbortionIsEssential. RT if you are too!" id="copyTweet2" disabled>I’m part of the majority that believes #AbortionIsEssential. RT if you are too!</textarea>
+                    <div onclick="copyPasteTweet2()">Copy Tweet</div>
+
+                    <textarea type="text" value="ABORTION IS STILL LEGAL in the U.S. Abortion IS a human right. Abortion IS essential. #AbortionIsEssential" id="copyTweet3" disabled>ABORTION IS STILL LEGAL in the U.S. Abortion IS a human right. Abortion IS essential. #AbortionIsEssential</textarea>
+                    <div onclick="copyPasteTweet3()">Copy Tweet</div>
+
+                </div>
+                
             </div>
         </div>
     </body>

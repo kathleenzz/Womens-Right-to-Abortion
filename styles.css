@@ -2,6 +2,8 @@ html,
 body {
   margin: 0;
   padding: 0;
+  font-family: 'Roboto Flex', sans-serif; /* DESIGNER CHANGE*/
+  letter-spacing: 2px; 
 }
 
 /* navbar styling */
@@ -45,7 +47,7 @@ li {
 }
 .navBar button:hover {
   cursor: pointer;
-  text-decoration: underline;
+  /* text-decoration: underline; */
   border: 5px solid white; /* DESIGNER CHANGE */
   background-color: yellow; /* DESIGNER CHANGE */
 }
@@ -113,12 +115,6 @@ li {
 
 }
 
-.secondColumn>div>img {
-  /*sizes article preview iamges accordingly */
-  
-  
-}
-
 .secondColumn>div>p {
   /* article title styling */
   font: arial; /* DESIGNER CHANGE*/
@@ -164,7 +160,8 @@ li {
 }
 
 #HowToHelp p:first-child {
-  font-size: 25px;
+  font-size: 50px;
+  margin: 10px;
 }
 
 .action1,
@@ -173,6 +170,19 @@ li {
   background-color: red; /* DESIGNER CHANGE*/
   padding: 20px;
   margin: 10px 0;
+
+  text-align: center;
+}
+
+.action1Section {
+  background-color:aqua; /* DESIGNER CHANGE */
+  padding: 10px 10px;
+  margin: 20px;
+  text-align: center;
+}
+
+.action1Section:last-child {
+  padding-bottom: 50px;
 }
 
 .generator {
@@ -202,4 +212,39 @@ button {
   padding: 15px;
   margin: 15px;
 }
+
+
+.tweetSection textarea {
+  height: 20vh;
+  resize: none;
+  font-size: 25px;
+  border: none; /* DESIGNERS CHANGE */
+  background-color: beige; /* DESIGNERS CHANGE */
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* DESIGNERS CHANGE */
+}
+
+.tweetSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 300px;
+}
+
+.tweetSection div {
+  background-color: blue; /* DESIGNER CHANGE */
+  color: white;
+  width: 50%;
+  border-radius: 0 0 40px 40px;
+  padding: 5px;
+}
+
+.tweetSection div:nth-child(even) {
+ margin-bottom: 10px; /* targets even childs LOLOL I am so sorry if U are reading this code.  It is 12 in the AM! */
+}
+
+.tweetSection div:hover {
+  cursor: pointer;
+  background-color: purple; /* DESIGNER CHANGE */
+}
+
 
